@@ -1,0 +1,103 @@
+object KlikForma: TKlikForma
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = zatvori
+  DesignerMasterStyle = 0
+  object Igrac1Dugme: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Igrac1Dugme'
+    OnClick = Igrac1DugmeClick
+  end
+  object Igrac2Dugme: TButton
+    Enabled = False
+    Position.X = 376.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Igrac2Dugme'
+    OnClick = Igrac2DugmeClick
+  end
+  object IzlazDugme: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 2
+    Text = 'IzlazDugme'
+    OnClick = IzlazDugmeClick
+  end
+  object Igrac1Tekst: TText
+    Position.X = 136.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Igrac2Tekst: TText
+    Position.X = 384.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RezultatText: TText
+    Position.X = 224.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object VrijemeText1: TLabel
+    Position.X = 168.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'test'
+    Visible = False
+    TabOrder = 6
+  end
+  object VrijemeText2: TLabel
+    Position.X = 416.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'test'
+    Visible = False
+    TabOrder = 5
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 168
+    Top = 32
+  end
+  object Timer2: TTimer
+    OnTimer = Timer2Timer
+    Left = 416
+    Top = 40
+  end
+  object VrIsteklo1: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 104.000000000000000000
+    StyleLookup = 'listboxitemlabel'
+    TabOrder = 10
+  end
+  object VrIsteklo2: TLabel
+    Position.X = 384.000000000000000000
+    Position.Y = 104.000000000000000000
+    StyleLookup = 'listboxitemlabel'
+    TabOrder = 9
+  end
+end

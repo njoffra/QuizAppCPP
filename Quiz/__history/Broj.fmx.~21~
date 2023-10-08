@@ -1,0 +1,238 @@
+object BrojForma: TBrojForma
+  Left = 0
+  Top = 0
+  Caption = 'BrojForma'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = zatvori
+  DesignerMasterStyle = 0
+  object Label1Generisi: TLabel
+    Position.X = 248.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxheaderlabel'
+    Text = 'Va'#353'i brojevi su:'
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Generisi'
+    OnClick = Button1Click
+  end
+  object Label6: TLabel
+    Position.X = 520.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxheaderlabel'
+    TabOrder = 3
+  end
+  object Label7: TLabel
+    Position.X = 504.000000000000000000
+    Position.Y = 128.000000000000000000
+    StyleLookup = 'listboxheaderlabel'
+    Text = 'Rezultat:'
+    TabOrder = 4
+  end
+  object EditDisplay: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'editstyle'
+    TabOrder = 5
+    KeyboardType = NumberPad
+    Position.X = 88.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ButtonNum1: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    OnClick = NumberClick2
+  end
+  object ButtonNum2: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    OnClick = NumberClick2
+  end
+  object ButtonNum4: TButton
+    Position.X = 328.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    OnClick = NumberClick2
+  end
+  object ButtonNum3: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    OnClick = NumberClick2
+  end
+  object ButtonNum5: TButton
+    Position.X = 376.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    OnClick = NumberClick2
+  end
+  object ButtonMinus: TButton
+    Position.X = 232.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = '-'
+    OnClick = OperatorClick
+  end
+  object ButtonDijeli: TButton
+    Position.X = 328.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = '/'
+    OnClick = OperatorClick
+  end
+  object ButtonPuta: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = '*'
+    OnClick = OperatorClick
+  end
+  object ButtonJednako: TButton
+    Position.X = 432.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = '='
+    OnClick = ButtonJednakoClick
+  end
+  object ButtonPlus: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = '+'
+    OnClick = OperatorClick
+  end
+  object ButtonBrisi: TButton
+    Position.X = 376.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = #9003
+    OnClick = BrisiClick
+  end
+  object ButtonRezultat: TButton
+    EnableDragHighlight = False
+    Enabled = False
+    Position.X = 488.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    OnClick = NumberClick2
+  end
+  object ButtonLZagrada: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Text = '('
+    OnClick = OperatorClick
+  end
+  object ButtonDZagrada: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = ')'
+    OnClick = OperatorClick
+  end
+  object Bodovi: TLabel
+    Position.X = 216.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    TabOrder = 21
+  end
+  object Izlaz: TButton
+    Position.X = 488.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Text = 'Potvrdi'
+    OnClick = IzlazClick
+  end
+  object VrijemeText: TLabel
+    Position.X = 464.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+  end
+  object IzlazPravi: TButton
+    Position.X = 488.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    Text = 'Izlaz'
+    OnClick = IzlazPraviClick
+  end
+  object Vrijeme: TTimer
+    Enabled = False
+    OnTimer = VrijemeTimer
+    Left = 288
+    Top = 8
+  end
+end

@@ -1,0 +1,92 @@
+object NavigacijaForma: TNavigacijaForma
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object BrojButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Moj broj'
+    TextSettings.Font.Family = 'Copperplate Gothic'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = BrojButtonClick
+  end
+  object SpajanjeButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Spajalica'
+    TextSettings.Font.Family = 'Copperplate Gothic'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = SpajanjeButtonClick
+  end
+  object KlikButton: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Klik'
+    OnClick = KlikButtonClick
+  end
+  object ZaokruziButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Ko zna zna'
+    TextSettings.Font.Family = 'Copperplate Gothic'
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00020000000000000004000000}
+    OnClick = ZaokruziButtonClick
+  end
+  object UkupniBodovi: TText
+    Position.X = 256.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SingleplayerText: TText
+    Position.X = 216.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Singleplayer igrice'
+    TextSettings.Font.Family = 'Segoe Print'
+  end
+  object MultiplayerText: TText
+    Position.X = 216.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Multiplayer igrice'
+    TextSettings.Font.Family = 'Segoe Print'
+  end
+  object WaterTransitionEffect1: TWaterTransitionEffect
+    Progress = 30.000000000000000000
+    RandomSeed = 0.300000011920929000
+  end
+end

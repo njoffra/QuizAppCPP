@@ -1,0 +1,50 @@
+//---------------------------------------------------------------------------
+
+#ifndef KlikH
+#define KlikH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Controls.Presentation.hpp>
+#include <FMX.StdCtrls.hpp>
+#include <FMX.Types.hpp>
+#include <FMX.Objects.hpp>
+#include <FMX.Colors.hpp>
+#include <FMX.ListBox.hpp>
+#include <FMX.Effects.hpp>
+
+#include <FMX.Filter.Effects.hpp>//---------------------------------------------------------------------------
+class TKlikForma : public TForm
+{
+__published:	// IDE-managed Components
+	TButton *Igrac1Dugme;
+	TButton *Igrac2Dugme;
+	TButton *IzlazDugme;
+	TText *Igrac1Tekst;
+	TText *Igrac2Tekst;
+	TText *RezultatText;
+	TTimer *Timer1;
+	TTimer *Timer2;
+	TLabel *VrijemeText1;
+	TLabel *VrijemeText2;
+	TLabel *VrIsteklo1;
+	TLabel *VrIsteklo2;
+	TRippleEffect *RippleEffect1;
+	void __fastcall zatvori(TObject *Sender, TCloseAction &Action);
+	void __fastcall IzlazDugmeClick(TObject *Sender);
+	void __fastcall Igrac1DugmeClick(TObject *Sender);
+	void __fastcall Igrac2DugmeClick(TObject *Sender);
+	void __fastcall Timer1Timer(TObject *Sender);
+	//void __fastcall FormCreate(TObject *Sender);
+	void __fastcall Timer2Timer(TObject *Sender);
+private:
+	TDateTime StartTime1;
+	TDateTime StartTime2;	// User declarations
+public:		// User declarations
+	__fastcall TKlikForma(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TKlikForma *KlikForma;
+//---------------------------------------------------------------------------
+#endif
